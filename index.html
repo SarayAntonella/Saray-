@@ -23,37 +23,24 @@
             max-width: 400px;
             text-align: center;
         }
-        h1 {
-            color: #2c3e50;
-            margin-top: 0;
-            font-size: 24px;
-        }
-        .mensaje-original {
-            color: #d32f2f;
-            font-weight: bold;
-            font-size: 20px;
-            display: block;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #5d6d7e;
-            line-height: 1.6;
-        }
-        /* Estilo para el botón de descarga de Word */
-        .btn-descarga {
+        h1 { color: #2c3e50; font-size: 24px; margin-top: 0; }
+        .mensaje-original { color: #d32f2f; font-weight: bold; font-size: 20px; display: block; margin-bottom: 10px; }
+        p { color: #5d6d7e; line-height: 1.6; }
+        
+        /* Estilo para los botones */
+        .btn {
             display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #2b579a; /* Azul Word */
+            margin: 10px 5px;
+            padding: 10px 15px;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s;
+            font-size: 14px;
         }
-        .btn-descarga:hover {
-            background-color: #1e3e6d;
-        }
+        .btn-pdf { background-color: #d32f2f; } /* Rojo para PDF */
+        .btn-word { background-color: #2b579a; } /* Azul para Word */
+        
         .footer {
             font-size: 12px;
             color: #abb2b9;
@@ -67,19 +54,17 @@
 
 <div class="cuadro-trabajo">
     <h1>Proyecto Académico</h1>
-    
     <span class="mensaje-original">¡Hola mundo!</span>
-    
-    <p>Esta es mi primera página web hecha desde mi celular para la asignatura de 
-    <b>Alfabetización Digital</b> en la Universidad de Sucre.</p>
+    <p>Esta es mi primera página web hecha desde mi celular para la asignatura de <b>Alfabetización Digital</b>.</p>
 
-    <p>Puedes descargar mi trabajo aquí:</p>
-    <a href="archivo.docx" download class="btn-descarga">
-        Descargar documento Word
-    </a>
+    <p>Descarga mis documentos aquí:</p>
+
+    <a href="tareadigitacion.pdf" target="_blank" class="btn btn-pdf">Ver PDF</a>
+
+    <a href="archivo.docx" download class="btn btn-word">Descargar Word</a>
 
     <div class="footer">
-        [span_0](start_span)Presentado por: Saray Puerta Viloria[span_0](end_span)
+        Presentado por: Saray Puerta Viloria
     </div>
 </div>
 
